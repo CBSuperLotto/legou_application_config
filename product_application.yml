@@ -51,7 +51,7 @@ server:
 spring:
   application:
     name: PRODUCT-SERVICE #我注册的这个服务叫什么名字
-  profiles: dev  #什么环境，和上面的对应来的，看取哪一个
+  profiles: test  #什么环境，和上面的对应来的，看取哪一个
   datasource:
     url: jdbc:mysql://localhost:3306/legou
     username: root
