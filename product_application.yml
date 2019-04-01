@@ -35,8 +35,9 @@ eureka:
      defaultZone: http://localhost:7001/eureka
 
 
-mybatis:
-  type-aliases-package: com.cb.legou.domain,com.cb.legou.query
+mybatis-plus:
+  mapper-locations: classpath:com/cb/legou/mapper/*Mapper.xml   
+  type-aliases-package: com.cb.legou.domain, com.cb.legou.query               
 
 
 ---
@@ -72,5 +73,7 @@ eureka:
      defaultZone: http://localhost:7001/eureka
 
 
-mybatis:
-  type-aliases-package: com.cb.legou.domain,com.cb.legou.query
+
+mybatis-plus:
+  mapper-locations: classpath:com/cb/legou/mapper/*Mapper.xml   
+  type-aliases-package: com.cb.legou.domain, com.cb.legou.query  
