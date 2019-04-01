@@ -10,8 +10,8 @@ server:
     uri-encoding: UTF-8
 spring:
   application:
-    name: PRODUCT-SERVICE #我注册的这个服务叫什么名字
-  profiles: dev  #什么环境，和上面的对应来的，看取哪一个
+    name: PRODUCT-SERVICE
+  profiles: dev
   datasource:
     url: jdbc:mysql://localhost:3306/legou
     username: root
@@ -32,14 +32,11 @@ spring:
 eureka:
   client:
     service-url:
-     defaultZone: http://localhost:7001/eureka  #服务注册的注册中心的地址
+     defaultZone: http://localhost:7001/eureka
 
-#mybatis的别名的配置
+
 mybatis:
   type-aliases-package: com.cb.legou.domain,com.cb.legou.query
-
-
-
 
 
 ---
@@ -50,8 +47,8 @@ server:
     uri-encoding: UTF-8
 spring:
   application:
-    name: PRODUCT-SERVICE #我注册的这个服务叫什么名字
-  profiles: test  #什么环境，和上面的对应来的，看取哪一个
+    name: PRODUCT-SERVICE
+  profiles: test
   datasource:
     url: jdbc:mysql://localhost:3306/legou
     username: root
@@ -72,8 +69,8 @@ spring:
 eureka:
   client:
     service-url:
-     defaultZone: http://localhost:7001/eureka  #服务注册的注册中心的地址
+     defaultZone: http://localhost:7001/eureka
 
-#mybatis的别名的配置
+
 mybatis:
   type-aliases-package: com.cb.legou.domain,com.cb.legou.query
